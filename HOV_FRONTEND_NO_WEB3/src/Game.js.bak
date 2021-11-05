@@ -1,0 +1,100 @@
+import { useState } from 'react' 
+
+const Game = () => {
+    return ( 
+        
+        <header className="App-header">
+        <h1 className="grey"> Hero Or Villain </h1>  
+            {/*      
+        
+            <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            Contract on etherscan
+            </a> */}
+        <div id="hov_main">
+            <div id="flex" class="tall">
+            <div id="heroplayer">
+                <div id="heroget"> 
+                <p className="hovfont"> HERO </p> 
+                <div id="flex"> <button className="statbutton" > getHeroLevel() </button> <p className="number" id="number">24</p> </div>
+                <div id="flex"> <button className="statbutton" > getHeroStrength() </button> 19891 <br />  </div>
+                <div id="flex"> <button className="statbutton" > getHeroSupport() </button> 1000 <br /> </div>
+                <div id="flex"> <button className="statbutton" > getHeroLove() </button> 4249  </div>
+                </div> 
+            </div> 
+            <div id="play"> 
+                <button className="button" > hero_Use_Key() </button>
+                <button className="button" > buyHeroLevel() </button>
+            </div> 
+            <div id="play">
+                <button className="buttonspecial" > riseHero() </button>
+                <button className="buttonspecial" > rise_Hero_Allies() </button>
+
+            </div>
+            </div> 
+
+            {/* end hero player area    */}
+            
+            {/* begin status area       */}
+            
+            <div id="statusfunctions">  
+
+            <div id="heroreborn"> 
+                <div id="flexdeathleft"> 
+                <button className="statbutton" > getHeroReborn() </button>
+                <p className="numberdeathleft"> 7 </p>
+                </div>
+                <div id="flexdeathright"> 
+                <button className="statbutton" > getVillainReborn() </button>
+                <p className="numberdeathright"> 14 </p>
+                </div>
+            </div> 
+
+            <div id="status"> 
+                <br />
+                <p id="statustext"> GET STATUS: 47740824, 442, THE HERO IS CURRENTLY MORE POWERFUL THAN THE VILLAIN! </ p> 
+                <p id="statustext"> SET STATUS: THE HERO HAS DEFEATED THE VILLAIN. HEROIC VICTORY! </ p>  
+                <br />
+            </div> 
+
+            <button className="button" > getStatus() </button>
+            <button className="button" > setStatus() </button>
+            </div> 
+
+            <div id="flex"> 
+                
+            <div id="heroplayer">
+                <div id="heroget"> 
+                <p className="hovfont"> VILLAIN </p> 
+                <div id="flex"> <button className="statbutton" > getVillainLevel() </button> 24 <br />  </div>
+                <div id="flex"> <button className="statbutton" > getVillainStrength() </button> 1900 <br />  </div>
+                <div id="flex"> <button className="statbutton" > getVillainSupport() </button> 1000 <br /> </div>
+                <div id="flex"> <button className="statbutton" > getVillainLove() </button> 4249 <br />  </div>
+                </div> 
+            </div>
+            <div id="play"> 
+                <button className="button" > villain_Use_Key() </button>
+                <button className="button" > buyVillainLevel() </button>
+            </div>
+            <div id="play">
+                <button className="buttonspecial" > riseVillain() </button>
+                <button className="buttonspecial" > rise_Villain_Allies() </button>
+
+            </div>       
+            </div> 
+
+        </div>
+        <br />
+        <Navbar /> 
+
+        </header>
+        
+        
+     );
+}
+ 
+export default Game;

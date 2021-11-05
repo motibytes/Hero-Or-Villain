@@ -1,0 +1,24 @@
+learned it is CALL or SEND 
+#########################################################################################
+
+
+query for the result with the transaction information (web3 has some shortcuts for this)
+##############################################################################################
+
+myContract.methods.setName(Hello).call({
+    from: 0x4b0897b0513fdc7c541b6d9d7e929c4e5364d2db,
+    gas: 470000,
+})
+.then((result) => {
+    console.log(result)
+    }
+})
+However, it is important to note that call() does not actually send a real transaction. 
+Instead, it executes the operation in your ethereum provider's EVM, and returns any errors or values that would result.
+
+One option is to do both a call() and send() to first check that the result is what you expect, then actually send the real transaction.
+
+The other option is to wait for your transaction to be included in a block, and then read from the contract the state of the variable you are interested in. 
+This might be most effective by 
+******************************************************emitting an event from the function********************************
+, and  *************listening for that event ****************** to check when the transaction has been executed.
