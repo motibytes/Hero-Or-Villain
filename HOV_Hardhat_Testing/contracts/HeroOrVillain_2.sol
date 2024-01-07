@@ -3,6 +3,13 @@
     @author 0xdivi✨
     @notice The World's First Public Text-based Blockchain Wargame 
     @notice SPDX-License-Identifier: UNLICENSED
+
+    @notice 
+
+    Public Domain Release Update: 
+    On 1/7/2024 I release all claim to this code, that it be available to the public domain. 
+    By the power of the Word as is mine by Divine Right, I declare that anyone who attempts to use this code with malicious intent or any evil purposes will crumble. Their project will not work and the results will return to sender. 
+
     @notice HERO OR VILLAIN is not audited or financially insured in any way. Interaction with this contract is entirely at your own risk. 
     @notice There is no financial gain or financial incentive for the user and no reason at all to invest money into this gamified contract. 
     @notice 
